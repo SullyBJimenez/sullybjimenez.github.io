@@ -1,10 +1,15 @@
 h1{
-    font-size: 5mm;
+    font-size: 10mm;
     color: blue;
 }
 
 img{
     border: 2px solid violet;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+.listItems{
+    color: mediumseagreen;
+    font-size: 5mm;
 }

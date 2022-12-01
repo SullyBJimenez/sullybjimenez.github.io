@@ -1,0 +1,10 @@
+h1{
+    font-size: 5mm;
+    color: blue;
+}
+
+img{
+    border: 2px solid violet;
+    width: 100px;
+    height: 100px;
+}

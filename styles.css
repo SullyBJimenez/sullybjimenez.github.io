@@ -12,6 +12,8 @@ iframe {
   margin: 0 auto;
 }
 
+
+
 .carousel {
   position:relative
 }
@@ -312,6 +314,21 @@ iframe {
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+  }
+  .skills-list-div {
+    padding: 5%;
+  }
+  .caption div.skills {
+    border-style: solid;
+    border-color: white;
+    border-width: light;
+    background-color: transparent;
+    border-radius: 0%;
+    width: 80px;
+    height: 80px;
+    display: inline;
+    text-align: center;
+    padding: 1%;
   }
   
   h3 {

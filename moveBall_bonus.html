@@ -1,0 +1,153 @@
+<div id="ball" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:green;
+  text-align:center;
+  vertical-align: middle;
+  line-height: 50px;">GO</div>
+
+<div id="ball2" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background: yellow;
+  text-align:center;
+  vertical-align: middle;
+  line-height: 50px;">SLOW</div>
+
+
+  <div id="ball3" style="
+    z-index:5;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background: red;
+    text-align:center;
+    vertical-align: middle;
+    line-height: 50px;">STOP!</div>
+
+    <div id="boundary" style="
+      z-index: 4;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 555px;
+      height: 555px;
+      border-radius: 0%;
+      border-color: black;
+      border: 1px;
+      border-style: groove;"></div>
+
+<script>
+var startingGreenPosition = 0;
+var velocityGreenX = 5;
+var velocityGreenY = 3;
+var positionGreenX = 0;
+var positionGreenY = 0;
+
+var startingYellowPositionX = 0;
+var startingYellowPositionY = 0;
+var velocityYellowX = 1;
+var velocityYellowY = 2;
+var positionYellowX = 0;
+var positionYellowY = 0;
+
+
+var maxX = 500;
+var maxY = 500;
+var reverseX = true;
+var reverseY = true;
+
+var time = 1;
+
+var ball = document.getElementById('ball');
+var ball2 = document.getElementById('ball2');
+var ball3 = document.getElementById('ball3');
+//var ball4 = document.getElementById('ball4');
+
+function redBall(){
+  ball3.style.left = positionGreenX;
+  ball3.style.top = positionGreenY;
+  
+}
+
+function changePositionYellow(){
+  if(startingYellowPositionX === 0){
+    ball2.style.left = positionYellowX;
+    positionYellowX = positionYellowX + velocityYellowX;
+    if(positionYellowX === maxX){
+      startingYellowPositionX = maxX;
+    }
+  }
+  if(startingYellowPositionY === 0){
+      ball2.style.top = positionYellowY;
+      positionYellowY = positionYellowY + velocityYellowY;
+      if(positionYellowY === maxY){
+        startingYellowPositionY = maxY;
+      }
+    }
+
+  if(startingYellowPositionX === maxX){
+    ball2.style.left = positionYellowX;
+    positionYellowX = positionYellowX - velocityYellowX;
+    if(positionYellowX === 0){
+      startingYellowPositionX = 0;
+    }
+  }
+
+  if(startingYellowPositionY === maxY){
+    ball2.style.top = positionYellowY;
+    positionYellowY = positionYellowY - velocityYellowY;
+    if(positionYellowY === 0){
+      startingYellowPositionY = 0;
+    }
+  }
+}
+
+function changePositionGreen(){
+  if(reverseX){
+    positionGreenX = positionGreenX + velocityGreenX;
+    ball.style.left = positionGreenX + 'px'; 
+  }
+    else{
+      positionGreenX = positionGreenX - velocityGreenX;
+      ball.style.left = positionGreenX + 'px';
+    }
+
+  if(reverseY){
+    positionGreenY = positionGreenY + velocityGreenY;
+    ball.style.top = positionGreenY + 'px';
+  }
+    else{
+      positionGreenY = positionGreenY - velocityGreenY;
+      ball.style.top = positionGreenY + 'px';
+    }
+  if(positionGreenX > maxX || positionGreenX === startingGreenPosition){
+    reverseX = !reverseX;
+  }
+  if(positionGreenY > maxY || positionGreenY === startingGreenPosition){
+    reverseY = !reverseY
+  }
+  if (positionGreenY > maxY || positionGreenX > maxX){
+    redBall();
+  }
+  if (positionGreenY === startingGreenPosition || positionGreenX === startingGreenPosition){
+    redBall();
+  }
+}
+
+setInterval(changePositionGreen, time);
+setInterval(changePositionYellow, time);
+</script>

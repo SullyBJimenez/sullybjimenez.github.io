@@ -6,7 +6,7 @@ body, html {
 }
 
 #navbar {
-  overflow: hidden;
+  overflow: visible;
   background-color: #333;
 }
 
@@ -35,6 +35,7 @@ body, html {
 }
 
 .sticky {
+  display: block;
   position: fixed;
   top: 0;
   width: 100%;

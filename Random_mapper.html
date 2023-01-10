@@ -17,6 +17,9 @@
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoiamltZW5lei1zdWxsIiwiYSI6ImNsYmxqemJiazA4ZHYzcW1zb3VncXplaGMifQ.qiB0aU6K0Z1tdT_Ke3c5eA';
 
+  let randomLong = generateRandomLong;
+  let randomLat = generateRandomLat;
+
   function generateRandomLong() {
     var num = (Math.random()*180).toFixed(3);
     var posorneg = Math.floor(Math.random());
@@ -41,8 +44,8 @@ function generateRandomLat() {
         zoom: 5
     });
 
-    var markerMIT = new mapboxgl.Marker()
-      .setLngLat([-71.091542,42.358862])
+    var marker = new mapboxgl.Marker()
+      .setLngLat([generateRandomLong(), generateRandomLat()])
       .addTo(map);
 
 

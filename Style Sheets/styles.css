@@ -5,6 +5,46 @@ body, html {
   color: #777;
 }
 
+#navbar {
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: black;
+  bottom: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* .navbar-nav > .active{
+    color: #000;
+    background: #d65c14;
+}
+.navbar-nav  > .active > a,
+.navbar-nav  > .active > a:hover,
+.navbar-nav  > .active > a:focus {
+    color: #000;
+    background: #d65c14;
+} */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  width: 100%;
+  background-color: black;
+  height: auto;
+} 
+
+.sticky a {
+  color: white;
+}
+
+.sticky + body {
+  padding-top: 60px;
+}
+
+
 iframe {
   width: 560; 
   height: 315;
@@ -28,17 +68,17 @@ h2 {
   
   }
   .bgimg-1 {
-    background-image: url("background.jpg");
+    background-image: url("../Images/background.jpg");
     min-height: 100%;
   }
   
   .bgimg-2 {
-    background-image: url("IMG_0769.jpeg");
+    background-image: url("../Images/background2.jpeg");
     min-height: 100%;
   }
   
   .bgimg-3 {
-    background-image: url("background.jpg");
+    background-image: url("../Images/background.jpg");
     min-height: 400px;
   }
   

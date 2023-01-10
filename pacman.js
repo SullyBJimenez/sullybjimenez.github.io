@@ -4,8 +4,8 @@ var direction = 0;
 var focus = 0;
 
 const pacArray = [
-  ['PacMan1.png', 'PacMan2.png'],
-  ['PacMan3.png', 'PacMan4.png'],
+  ['./Images/PacMan1.png', './Images/PacMan2.png'],
+  ['./Images/PacMan3.png', './Images/PacMan4.png'],
 ];
 
 function Run() {

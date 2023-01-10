@@ -1,118 +1,296 @@
-
-
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Tangerine:wght@700&display=swap" rel="stylesheet">
-        
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <head>
+    <link rel="stylesheet" href="./Style Sheets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style Sheets/bootstrap.min.css" />
 
-        <title>Sully's Portfolio | Software Engineer</title>
-    </head>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-    <body>
-        <div class="bgimg-1">
-            <div class="caption">
-            <h1>Sully Jimenez</h1>
-            <h2>Software Engineer</h2>
-            </div>
+    <title>Sully's Portfolio | Software Engineer</title>
+  </head>
+
+  <body>
+    <nav id="navbar" class="sticky-top navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand px-3" href="#">Sully</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto my-2 my-lg-1 w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="./Resume.pdf" class="nav-link">resume</a>
+            </li>
+          </ul>
         </div>
-          
-        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-          <h3 style="text-align:center;">About Me</h3>
-          <p>Aspiring software engineer currently pursuing a certificate through MIT for FullStack Javascript Programming through MERN. I am based in the New England area. I enjoy problem solving and creative thinking. One of my specialities is being able to breakdown large projects into smaller tasks. My hobbies include playing games, watching a TV series, fitness, and reading. I love travelling, reach out to hear about some of my adventures! *Intro video coming soon! enjoy this placeholder in the meantime :]*</p>
-          <iframe src="https://www.youtube.com/embed/sE0mwEnkgSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>   
-          </iframe>
-        </div>
-          
-        <div class="bgimg-2">
-            <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #000000;">Skills</span>
-            
-            <div class="skills-list-div">
-                <div class="skills">Customer Service</div>
-                <div class="skills">Problem Solving</div>
-                <div class="skills">Attention to Detail</div>
-                <div class="skills">Administrative</div>
-                <div class="skills">Negotiation</div>
-                <div class="skills">Javascript</div>
-                <div class="skills">REACT</div>
-            </div>
-            
+      </div>
+    </nav>
 
-            </div>
+    <section id="home" class="home">
+      <div class="bgimg-1">
+        <div class="caption">
+          <h1>Sully Jimenez</h1>
+          <h2>Software Engineer</h2>
         </div>
-          
-        <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:200px 80px;text-align: justify;">
-            <div>
-                <h2>Projects</h2>
-            </div>
+      </div>
+    </section>
 
-            <!--- This section is for the carousel --> 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <embed src="pacman.html" type="text/html" width="1000" height="592" alt="First slide"> 
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Pacman</h5>
-                            <p>The making of an awesome game</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <embed src="eyes.html" type="text/html" width="1300" height="592" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Following Eyes</h5>
-                            <p>Always watching</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <embed src="moveBall_bonus.html" type="text/html" width="1000" height="592" alt="Third slide" margin="auto" >
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Ball Moving Exercise</h5>
-                            <p>Red, Green, Yellow!</p>
-                        </div>
-                    </div>
+    <section id="about" class="about">
+      <div
+        style="
+          color: #777;
+          background-color: white;
+          text-align: center;
+          padding: 50px 80px;
+          text-align: justify;
+        "
+      >
+        <h3 style="text-align: center">About Me</h3>
+        <p>
+          Aspiring software engineer currently pursuing a certificate through
+          MIT for FullStack Javascript Programming through MERN. I am based in
+          the New England area. I enjoy problem solving and creative thinking.
+          One of my specialities is being able to breakdown large projects into
+          smaller tasks. My hobbies include playing games, watching a TV series,
+          fitness, and reading. I love travelling, reach out to hear about some
+          of my adventures! *Intro video coming soon! enjoy this placeholder in
+          the meantime :]*
+        </p>
+        <iframe
+          src="https://www.youtube.com/embed/sE0mwEnkgSI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="bgimg-2">
+        <div class="caption">
+          <span
+            class="border"
+            style="
+              background-color: transparent;
+              font-size: 25px;
+              color: #000000;
+            "
+            >Skills</span
+          >
+
+          <div class="skills-list-div">
+            <div class="skills">Customer Service</div>
+            <div class="skills">Problem Solving</div>
+            <div class="skills">Attention to Detail</div>
+            <div class="skills">Administrative</div>
+            <div class="skills">Negotiation</div>
+            <div class="skills">Javascript</div>
+            <div class="skills">REACT</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div style="position: relative">
+        <div
+          style="
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            padding: 200px 80px;
+            text-align: justify;
+          "
+        >
+          <div>
+            <h2>Projects</h2>
+          </div>
+
+          <!--- This section is for the carousel -->
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="3"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <embed
+                  src="pacman.html"
+                  type="text/html"
+                  width="1000"
+                  height="592"
+                  alt="First slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Pacman</h5>
+                  <p>The making of an awesome game</p>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+              </div>
+              <div class="carousel-item">
+                <embed
+                  src="eyes.html"
+                  type="text/html"
+                  width="1300"
+                  height="592"
+                  alt="Second slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Following Eyes</h5>
+                  <p>Always watching</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <embed
+                  src="moveBall_bonus.html"
+                  type="text/html"
+                  width="1000"
+                  height="592"
+                  alt="Third slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ball Moving Exercise</h5>
+                  <p>Red, Green, Yellow!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <embed
+                  src="Random_mapper.html"
+                  type="text/html"
+                  width="1300"
+                  height="592"
+                  alt="Fourth slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Random Map</h5>
+                  <p>Refresh for a new location</p>
+                </div>
+              </div>
             </div>
-            <!-- The end of the carousel-->
-            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- The end of the carousel-->
         </div>
-          
-        <div class="bgimg-3">
-            <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">What should I add here?</span>
-            </div>
-        </div>
-          
-        <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-            <p>What should I add here?</p>
-            </div>
-        </div>
-          
-        <div class="bgimg-1">
-            <div class="caption">
-            <span class="border">COOL!</span>
-            </div>
-        </div>
-        
-    </body>
-    
+      </div>
+    </section>
+
+    <div class="bgimg-3">
+      <div class="caption">
+        <span
+          class="border"
+          style="background-color: transparent; font-size: 25px; color: #f7f7f7"
+          >What should I add here?</span
+        >
+      </div>
+    </div>
+
+    <div style="position: relative">
+      <div
+        style="
+          color: #ddd;
+          background-color: #282e34;
+          text-align: center;
+          padding: 50px 80px;
+          text-align: justify;
+        "
+      >
+        <p>What should I add here?</p>
+      </div>
+    </div>
+
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">COOL!</span>
+      </div>
+    </div>
+  </body>
 </html>

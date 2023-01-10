@@ -5,6 +5,7 @@ body, html {
   color: #777;
 }
 
+/*Navigation Bar*/
 #navbar {
   overflow: visible;
   background-color: #333;
@@ -45,6 +46,13 @@ body, html {
   padding-top: 60px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 iframe {
   width: 560; 
   height: 315;
@@ -56,8 +64,6 @@ h2 {
   text-align: center;
 }
 
-
-  
   .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
     opacity: 0.65;

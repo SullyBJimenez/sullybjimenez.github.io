@@ -35,6 +35,7 @@
   </head>
 
   <body>
+    <!-- Navigation Bar -->
     <nav id="navbar" class="sticky-top navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand px-3" href="#">Sully</a>
@@ -51,27 +52,32 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto my-2 my-lg-1 w-100 justify-content-end">
+            
             <li class="nav-item">
-              <a class="nav-link" href="#home">home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#about">about</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">skills</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">projects</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a href="./Resume.pdf" class="nav-link">resume</a>
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="./Resume.pdf" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/sully-jimenez-7a182778">LinkedIn</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+<!-- End of Navigation Bar -->
 
+<!-- Home Section -->
     <section id="home" class="home">
       <div class="bgimg-1">
         <div class="caption">
@@ -80,13 +86,19 @@
         </div>
       </div>
     </section>
+<!-- End of Home Section -->
 
+    <!-- About Me section -->
     <section id="about" class="about">
       <div
         class="content"
       >
         <h3 style="text-align: center">About Me</h3>
-        <p>
+        <div>
+          <img src="../sullybjimenez.github.io/Images/IMG_6415 2.jpeg" alt="" style="border-radius: 50%" width="200px" height="200px" class="center">
+        </div>
+        <div>
+           <p>
           Aspiring software engineer currently pursuing a certificate through
           MIT for FullStack Javascript Programming through MERN. I am based in
           the New England area. I enjoy problem solving and creative thinking.
@@ -95,18 +107,23 @@
           fitness, and reading. I love travelling, reach out to hear about some
           of my adventures! *Intro video coming soon! enjoy this placeholder in
           the meantime :]*
-        </p>
+          </p>
+        </div>
+
         <iframe
-          src="https://www.youtube.com/embed/sE0mwEnkgSI"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        >
-        </iframe>
+        src="https://www.youtube.com/embed/sE0mwEnkgSI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+
       </div>
     </section>
+<!-- End of About Me section -->
 
+    <!-- Skills section -->
     <section id="skills" class="skills">
       <div class="bgimg-2">
         <div class="caption">
@@ -132,7 +149,9 @@
         </div>
       </div>
     </section>
+<!-- End of Skills section -->
 
+<!-- Projects Section -->
     <section id="projects" class="projects">
       <div style="position: relative">
         <div
@@ -172,6 +191,10 @@
                 data-target="#carouselExampleIndicators"
                 data-slide-to="3"
               ></li>
+              <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="4"
+            ></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -222,8 +245,21 @@
                   alt="Fourth slide"
                 />
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Random Map</h5>
+                  <a href="https://github.com/SullyBJimenez/random-map-location">Random Map</a>
                   <p>Refresh for a new location</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <embed
+                  src="real-time_bus_tracker.html"
+                  type="text/html"
+                  width="1300"
+                  height="592"
+                  alt="Fifth slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="https://github.com/SullyBJimenez/real-time-bus-tracker">Realtime Bus Tracker</a>
+                  <p>Uses an API to gain information on the bus location</p>
                 </div>
               </div>
             </div>
@@ -256,8 +292,10 @@
         </div>
       </div>
     </section>
+<!-- End of projects section -->
 
-    <div class="bgimg-3">
+    <!--New pages that I can add--> 
+      <!-- <div class="bgimg-3">
       <div class="caption">
         <span
           class="border"
@@ -285,7 +323,10 @@
       <div class="caption">
         <span class="border">COOL!</span>
       </div>
-    </div>
+    </div>  -->
+  <!--End of new pages-->
+
+
     <script>
         window.onscroll = function() {myFunction()};
         

@@ -38,7 +38,7 @@
     <!-- Navigation Bar -->
     <nav id="navbar" class="sticky-top navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand px-3" href="#">Sully</a>
+        <a id="logo" class="navbar-brand px-3" href="#">Sully</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,7 +50,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar-right">
           <ul class="navbar-nav me-auto my-2 my-lg-1 w-100 justify-content-end">
             
             <li class="nav-item">
@@ -80,15 +80,15 @@
     </nav>
 <!-- End of Navigation Bar -->
 
-<!-- Home Section -->
-    <section id="home" class="home">
-      <div class="bgimg-1">
-        <div class="caption">
-          <h1>Sully Jimenez</h1>
-          <h2>Software Engineer</h2>
-        </div>
-      </div>
-    </section>
+<!-- Home Section -->]
+<section id="home" class="home" >
+  <div class="bgimg-1">
+    <div class="caption">
+      <h1>Sully Jimenez</h1>
+      <h2>Software Engineer</h2>
+    </div>
+  </div>
+</section>
 <!-- End of Home Section -->
 
     <!-- About Me section -->
@@ -323,18 +323,18 @@
 
 
     <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
         </script>
   </body>
 </html>
